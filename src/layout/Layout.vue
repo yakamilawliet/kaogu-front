@@ -37,9 +37,9 @@ console.log(avatar.value)
             mode="horizontal"
             router
         >
-          <el-menu-item index="/home">首页</el-menu-item>
-          <el-menu-item index="/database">数字文物库</el-menu-item>
-          <el-menu-item index="/forum">论坛</el-menu-item>
+          <el-menu-item style="font-size: 17px" index="/home">首页</el-menu-item>
+          <el-menu-item style="font-size: 17px" index="/database">数字文物库</el-menu-item>
+          <el-menu-item style="font-size: 17px" index="/forum">论坛</el-menu-item>
         </el-menu>
       </div> <!-- 菜单区域 -->
 

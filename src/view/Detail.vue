@@ -15,7 +15,7 @@ const back = ref(
     getUrl('back.svg')
 )
 
-const value = ref('Mon')
+const value = ref('模型简介')
 
 const options = [
   '模型简介',
@@ -25,6 +25,9 @@ const options = [
 const cancel = () => {
 
 }
+
+console.log(value.value)
+
 </script>
 
 
@@ -75,10 +78,21 @@ const cancel = () => {
 
 
 
-    <div style="width: 100%; height: 400px; margin: 20px 0; background-color: #fdfcfb">
-      <div style="width: 30%; margin: 10px auto">
-        <el-segmented style="font-size: 20px" v-model="value" :options="options" block />
-      </div>
+    <div style="width: 100%; height: 600px; margin: 20px 0; background-color: #fdfcfb">
+        <div style="width: 40%; margin: auto">
+          <el-segmented v-model="value" :options="options" block />
+        </div>
+
+        <div v-if="value === '模型简介'" style="width: 1000px; height: 500px;
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); border-radius: 20px; margin: auto" >
+              <span>
+              </span>
+        </div>
+
+        <div v-else-if="value === '使用效果图'" style="width: 1000px; height: 500px; margin: auto">
+          <el-image style="width: 1000px; height: 500px; border-radius: 20px;" :src="test"/>
+        </div>
+
     </div>
 
 
