@@ -10,7 +10,9 @@ const avatar = ref(
   getUrl('avatar2.png')
 )
 
-
+const gotoForum = () => {
+  window.open('http://kaogu.tcyhe.com', '_blank');
+}
 console.log(avatar.value)
 
 </script>
@@ -39,14 +41,9 @@ console.log(avatar.value)
         >
           <el-menu-item style="font-size: 17px" index="/home">首页</el-menu-item>
           <el-menu-item style="font-size: 17px" index="/database">数字文物库</el-menu-item>
-          <el-menu-item style="font-size: 17px" index="/forum">论坛</el-menu-item>
+          <el-menu-item style="font-size: 17px" index="/forum" @click="gotoForum">论坛</el-menu-item>
         </el-menu>
       </div> <!-- 菜单区域 -->
-
-      <div style="text-align: right; margin-right: 20px">
-        <el-input v-model="input" style="width: 240px" placeholder="搜索模型" />
-      </div>
-
 
       <div style="width: 100px; text-align: right; margin-top: 15px">
         <el-dropdown>

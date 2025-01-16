@@ -56,7 +56,7 @@ load()
         <div style="margin-top: 30px; width: 50%; margin-left: 100px; " class="block" >
           <el-form-item label="" prop="showroomUrl">
             <vue3dLoader
-                style="width: 850px; height: 600px"
+                style="width: 850px; height: 490px"
                 :filePath="state.detail.associationUrl"
                 :backgroundColor="'#000'"
                 :backgroundAlpha="0.2"
@@ -91,12 +91,7 @@ load()
               <el-descriptions-item label="文物号" font-size="30px">{{ state.detail.associationNo }}</el-descriptions-item>
               <el-descriptions-item label="分类">{{ state.detail.artifactTypeName }}</el-descriptions-item>
               <el-descriptions-item label="年代">{{ state.detail.artifactAgeName }}</el-descriptions-item>
-              <el-descriptions-item label="模型标签">
-                <el-tag size="large">模型标签</el-tag>
-                <el-tag size="large">模型标签</el-tag>
-                <el-tag size="large">模型标签</el-tag>
-                <el-tag size="large">模型标签</el-tag>
-              </el-descriptions-item>
+              <el-descriptions-item label="模型标签">{{ state.detail.artifactTagName }}</el-descriptions-item>
             </el-descriptions>
           </div>
 
@@ -118,6 +113,7 @@ load()
         <div v-if="value === '模型简介'" style="width: 1000px; height: 500px;
         background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); border-radius: 20px; margin: auto" >
               <span>
+                {{ state.detail.remark }}
               </span>
         </div>
 
