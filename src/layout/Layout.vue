@@ -13,6 +13,11 @@ const avatar = ref(
 const gotoForum = () => {
   window.open('http://kaogu.tcyhe.com', '_blank');
 }
+
+const gotoShowroom = () => {
+  window.open('http://vr.kaogu.tcyhe.com', '_blank');
+}
+
 console.log(avatar.value)
 
 </script>
@@ -38,6 +43,7 @@ console.log(avatar.value)
           <el-menu-item style="font-size: 17px" index="/home">首页</el-menu-item>
           <el-menu-item style="font-size: 17px" index="/database">数字文物库</el-menu-item>
           <el-menu-item style="font-size: 17px" index="/forum" @click="gotoForum">论坛</el-menu-item>
+          <el-menu-item style="font-size: 17px" index="/forum" @click="gotoShowroom">展厅</el-menu-item>
         </el-menu>
       </div> <!-- 菜单区域 -->
 
