@@ -21,12 +21,8 @@ console.log(avatar.value)
   <div>
     <!-- 头部 -->
     <div style="display:flex; height: 60px; background-color: white; line-height: 60px; border-bottom: 1px solid #ddd">
-      <div style="width: 250px; display: flex">
-        <div style="width: 130px;">
+      <div style="margin-left: 50px; display: flex">
           <img src="../assets/image/logo.png" alt="" style="width: 130px; height: 60px; display: inline">
-        </div>
-        <div style="width: 400px; flex: 1"><b class="valueStyle">重庆考古</b></div>
-        <!--        color: palevioletred;-->
       </div> <!-- logo -->
 
 

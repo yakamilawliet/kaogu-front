@@ -1,3 +1,3 @@
 export default {
-    serverUrl: 'http://admin.kaogu.tcyhe.com:9205'
+    serverUrl: 'admin.kaogu.tcyhe.com:9205'
 }

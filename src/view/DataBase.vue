@@ -36,7 +36,9 @@ const form = reactive({
   artifactAgeId: "",
   artifactTypeId: "",
   associationType: 0,
-  associationTitle: ""
+  associationTitle: "",
+  pageSize:120, // 每页显示的条目数
+  pageNumber:0, // 当前页码
 })
 
 
@@ -59,7 +61,7 @@ const load = () => {
 
   request.post('/api/association/associationList', form
   ).then(res => {
-    state.list = res.data
+    state.list = res.data.associations
   })
 
 }
